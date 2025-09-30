@@ -1,0 +1,22 @@
+[
+  {
+    "Codigo": 1,
+    "Nombre": "prueba",
+    "Raza": "prueba",
+    "Localidad": "prueba",
+    "Calle": "prueba",
+    "Altura": 1111,
+    "Descripcion": "prueba",
+    "TipoMascota": "Perro"
+  },
+  {
+    "Codigo": 2,
+    "Nombre": "Hanna",
+    "Raza": "Delmonton",
+    "Localidad": "Rafaela",
+    "Calle": "Urq",
+    "Altura": 900,
+    "Descripcion": "Hanna es una perra del monton",
+    "TipoMascota": "Perro"
+  }
+]

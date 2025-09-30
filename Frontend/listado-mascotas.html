@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Mascotas - Veterinaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria San Patricio</h1>
+        <nav>
+            <ul>
+                <li><a href="alta-mascota.html">Alta de Mascota</a></li>
+                <li><a href="listado-mascotas.html">Listado de Mascotas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Listado de Mascotas</h2>
+            
+            <div class="table-controls">
+                <button id="btnCargarMascotas" class="btn btn-primary">Cargar Mascotas</button>
+                <button id="btnActualizar" class="btn btn-secondary">Actualizar</button>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <p>Cargando mascotas...</p>
+            </div>
+
+            <div id="mensaje" class="mensaje"></div>
+
+            <div class="table-container">
+                <table id="tablaMascotas" class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Raza</th>
+                            <th>Localidad</th>
+                            <th>Dirección</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <!-- Los datos se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="sinDatos" class="sin-datos" style="display: none;">
+                <p>No hay mascotas registradas.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria San Patricio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="listado-mascotas.js"></script>
+</body>
+</html>
+

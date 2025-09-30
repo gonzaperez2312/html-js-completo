@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Mascota - Veterinaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria San Patricio</h1>
+        <nav>
+            <ul>
+                <li><a href="alta-mascota.html">Alta de Mascota</a></li>
+                <li><a href="listado-mascotas.html">Listado de Mascotas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Alta de Mascota</h2>
+            
+            <form id="formularioMascota" class="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Mascota:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese el nombre de la mascota">
+                </div>
+
+                <div class="form-group">
+                    <label for="raza">Raza:</label>
+                    <input type="text" id="raza" name="raza" required placeholder="Ingrese la raza">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoMascota">Tipo de Mascota:</label>
+                    <select id="tipoMascota" name="tipoMascota" required>
+                        <option value="">Seleccione un tipo</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="localidad">Localidad:</label>
+                    <input type="text" id="localidad" name="localidad" required placeholder="Ingrese la localidad">
+                </div>
+
+                <div class="form-group">
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" required placeholder="Ingrese el nombre de la calle">
+                </div>
+
+                <div class="form-group">
+                    <label for="altura">Altura:</label>
+                    <input type="number" id="altura" name="altura" required placeholder="Ingrese la altura de la calle" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" placeholder="Ingrese una descripción de la mascota"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Guardar Mascota</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                </div>
+            </form>
+
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria San Patricio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="alta-mascota.js"></script>
+</body>
+</html>
+
